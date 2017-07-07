@@ -30,7 +30,25 @@ Le format CSV (*Comma Separated Values*, valeurs séparées par des virgules) a 
 
 Ce format était en concurrence avec des formats plus modernes tels que XML ou JSON, mais la structure des données des subventions n'était pas suffisamment complexe pour justifier l'utilisation d'un format en arbre.
 
-En effet, la structure décrite dans le décret se prête bien à la représentation sous forme de lignes et de colonnes. La seule subtilité réside dans le besoin de créer **une ligne par bénéficiaire**. Dans ce cas, toutes les données sont répétées, à l'exception des colonnes :
+En effet, la structure décrite dans le décret se prête bien à la représentation sous forme de lignes et de colonnes. Voici la liste des colonnes, dans l'ordre :
+
+- `nomAttributaire`
+- `idAttributaire`
+- `dateDecision`
+- `referenceDecision`
+- `nomBeneficiaire`
+- `idBeneficiaire`
+- `objet`
+- `montant`
+- `nature`
+- `conditionsVersement`
+- `datesPeriodeVersement`
+- `idRAE`
+- `notificationDeMinimisUE`
+- `pourcentageSubvention`
+
+
+La seule subtilité réside dans le besoin de créer **une ligne par bénéficiaire**. Dans ce cas, toutes les données de la subvention sont répétées, à l'exception des colonnes suivantes :
 
 - `nomBeneficiaire`
 - `idBeneficiaire`
