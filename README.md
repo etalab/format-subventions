@@ -28,10 +28,10 @@ Depuis le 1er mars 2017, l'ensemble des attribuants de subventions, à l'excepti
 
 - dans les 3 mois suivants la signature de la convention de subvention
 - *soit* sur le site Internet de la collectivité attribuante
-- *soit* sur le portail interministériel des données ouvertes [data.gouv.fr](http://data.gouv.fr)
-- un lien vers le jeu de données doit être publié sur le site Internet de la collectivité attribuante
+- *soit* sur le portail interministériel des données ouvertes [data.gouv.fr](http://data.gouv.fr) (en y ajoutant le mot-clef "subvention")
+    - dans ce cas, un lien vers le jeu de données doit être publié sur le site Internet de la collectivité attribuante
 
-Veuillez vous référer à la lettre du décret pour vous assurer du bon respect des obligations réglementaires.
+Veuillez vous référer à la lettre du décret et de l'arrêté pour vous assurer du bon respect des obligations réglementaires.
 
 # Un format tabulaire
 
@@ -45,17 +45,21 @@ En effet, la structure décrite dans le décret se prête bien à la représenta
 
 - `nomAttribuant`
 - `idAttribuant`
-- `dateDecision`
+- `dateConvention`
 - `referenceDecision`
 - `nomBeneficiaire`
 - `idBeneficiaire`
 - `objet`
 - `montant`
+    - si c'est un nombre décimal, ne pas oublier d'utiliser la vigule comme signe de séparation et de mettre le champ entre guillement double: `"77800,20"`
 - `nature`
+    - si le versement est à la fois en numéraire et en nature, séparez les valeurs par une virgule et mettez le champ entre parenthèses : `"aide en numéraire,aide en nature"`
 - `conditionsVersement`
 - `datesPeriodeVersement`
+    - si versement unique et date du versement connu, date unique : `2017-09-20`
+    - si versement échelonné ou date précise de versement unique inonnue, indiquer une période : `2017-12-14_2018-12-14`
 - `idRAE`
-- `notificationDeMinimisUE`
+- `notificationUE`
 - `pourcentageSubvention`
 
 
@@ -80,6 +84,10 @@ Le format CSV, contrairement au XML et au JSON, n'a pas une syntaxe très strict
   - soit être échappées (`Redimensionnement d'une conduite (\"pipeline\")`)
 - chaque ligne doivent avoir le même nombre de champs
 - le type MIME ou *Content-Type* est `text/csv`
+
+## Exemple
+
+Le fichier [exemple.csv](https://github.com/etalab/format-subventions/blob/master/exemple.csv) ([contenu brut](https://raw.githubusercontent.com/etalab/format-subventions/master/exemple.csv)) est un exemple de bonne saisie des données dans le cas d'une subvention octroyée par la Région Bretagne à deux bénéficiaires, Rodriguez SA et Bellandier SAS.
 
 ## Commentaires, suggestions
 
