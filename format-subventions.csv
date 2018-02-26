@@ -1,2 +1,1 @@
-nomAttribuant,idAttribuant,dateDecision,referenceDecision,nomBeneficiaire,idBeneficiaire,objet,montant,nature,conditionsVersement,datesPeriodeVersement,idRAE,notificationDeMinimisUE,pourcentageSubvention
-Région Bretagne,23350001600040
+nomAttribuant,idAttribuant,dateConvention,referenceDecision,nomBeneficiaire,idBeneficiaire,objet,montant,nature,conditionsVersement,datesPeriodeVersement,idRAE,notificationUE,pourcentageSubvention
