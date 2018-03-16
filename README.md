@@ -51,7 +51,7 @@ En effet, la structure décrite dans le décret se prête bien à la représenta
 - `montant`
     - si c'est un nombre décimal, ne pas oublier d'utiliser le point comme signe de séparation : `77800.20`
 - `nature`
-    - si le versement est à la fois en numéraire et en nature, séparez les valeurs par une virgule et mettez le champ entre parenthèses : `"aide en numéraire,aide en nature"`
+    - si le versement est à la fois en numéraire et en nature, séparez les valeurs par un point-virgule : `aide en numéraire;aide en nature` (l'arrêté sera amendé prochainement)
 - `conditionsVersement`
 - `datesPeriodeVersement`
     - si versement unique et date du versement connu, date unique : `2017-09-20`
@@ -76,11 +76,11 @@ Le format CSV, contrairement au XML et au JSON, n'a pas une syntaxe très strict
 - l'encodage est [UTF-8](https://fr.wikipedia.org/wiki/UTF-8)
 - **le séparateur de colonne est la virgule**
 - les champs qui contiennent une virgule doivent être entourés de guillemets doubles (`"`)
-- **le séparateur des nombres décimaux est le point** (1225 euros et 55 centimes => 1225.55). C'est contraire à la lettre actuelle de l'arrêté, mais celui-ci va être adapté en ce sens.
+- **le séparateur des nombres décimaux est le point** (1225 euros et 55 centimes => 1225.55). C'est aujourd'hui contraire à la lettre actuelle de l'arrêté, mais celui-ci va être adapté en ce sens.
 - si un champ contient des guillemets doubles, celles-ci doivent
   - soit être doublées (`Redimensionnement d'une conduite (""pipeline"")`)
   - soit être échappées (`Redimensionnement d'une conduite (\"pipeline\")`)
-- chaque ligne doivent avoir le même nombre de champs
+- chaque ligne doit avoir le même nombre de champs
 - le type MIME ou *Content-Type* est `text/csv`
 
 ## Exemple
@@ -90,3 +90,14 @@ Le fichier [exemple.csv](https://github.com/etalab/format-subventions/blob/maste
 ## Commentaires, suggestions
 
 Vous pouvez poser vos questions et transmettre vos commentaires via [le sujet dédié sur le forum d'Etalab](https://forum.etalab.gouv.fr/t/cadre-juridique-et-technique-de-louverture-des-donnees-de-subventions/4004).
+
+## Notes de versions
+
+### 1.1.0
+
+- Pour des raisons de praticité, et contrairement à la lettre de l'arrêté qui va être amendée, la mission Etalab a décidé d'utiliser le point comme séparateur des décimales
+- Pour les mêmes raisons, le séparateur du champ `nature` en cas de valeurs multiples est maintenant le point-virgule, et non plus la virgule
+
+### 1.0.0
+
+- Version initiale 26 février 2018
