@@ -31,8 +31,6 @@ Depuis le 1er mars 2017, l'ensemble des attribuants de subventions, à l'excepti
 - *soit* sur le portail interministériel des données ouvertes [data.gouv.fr](http://data.gouv.fr) (en y ajoutant le mot-clef "subvention")
     - dans ce cas, un lien vers le jeu de données doit être publié sur le site Internet de la collectivité attribuante
 
-Veuillez vous référer à la lettre du décret et de l'arrêté pour vous assurer du bon respect des obligations réglementaires.
-
 # Un format tabulaire
 
 ## Une structure des données simple
@@ -51,7 +49,7 @@ En effet, la structure décrite dans le décret se prête bien à la représenta
 - `idBeneficiaire`
 - `objet`
 - `montant`
-    - si c'est un nombre décimal, ne pas oublier d'utiliser la vigule comme signe de séparation et de mettre le champ entre guillement double: `"77800,20"`
+    - si c'est un nombre décimal, ne pas oublier d'utiliser le point comme signe de séparation : `77800.20`
 - `nature`
     - si le versement est à la fois en numéraire et en nature, séparez les valeurs par une virgule et mettez le champ entre parenthèses : `"aide en numéraire,aide en nature"`
 - `conditionsVersement`
@@ -78,7 +76,7 @@ Le format CSV, contrairement au XML et au JSON, n'a pas une syntaxe très strict
 - l'encodage est [UTF-8](https://fr.wikipedia.org/wiki/UTF-8)
 - **le séparateur de colonne est la virgule**
 - les champs qui contiennent une virgule doivent être entourés de guillemets doubles (`"`)
-- **le séparateur des nombres décimaux est la virgule** (1225 euros et 55 centimes => 1225,55), comme l'impose l'arrêté du 17 novembre 2017. Les nombres décimaux doivent donc être entourés de guillemets doubles (`"`)
+- **le séparateur des nombres décimaux est le point** (1225 euros et 55 centimes => 1225.55). C'est contraire à la lettre actuelle de l'arrêté, mais celui-ci va être adapté en ce sens.
 - si un champ contient des guillemets doubles, celles-ci doivent
   - soit être doublées (`Redimensionnement d'une conduite (""pipeline"")`)
   - soit être échappées (`Redimensionnement d'une conduite (\"pipeline\")`)
