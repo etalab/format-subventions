@@ -76,11 +76,11 @@ Le format CSV, contrairement au XML et au JSON, n'a pas une syntaxe très strict
 - l'encodage est [UTF-8](https://fr.wikipedia.org/wiki/UTF-8)
 - **le séparateur de colonne est la virgule**
 - les champs qui contiennent une virgule doivent être entourés de guillemets doubles (`"`)
-- **le séparateur des nombres décimaux est le point** (1225 euros et 55 centimes => 1225.55). C'est contraire à la lettre actuelle de l'arrêté, mais celui-ci va être adapté en ce sens.
+- **le séparateur des nombres décimaux est le point** (1225 euros et 55 centimes => 1225.55). C'est aujourd'hui contraire à la lettre actuelle de l'arrêté, mais celui-ci va être adapté en ce sens.
 - si un champ contient des guillemets doubles, celles-ci doivent
   - soit être doublées (`Redimensionnement d'une conduite (""pipeline"")`)
   - soit être échappées (`Redimensionnement d'une conduite (\"pipeline\")`)
-- chaque ligne doivent avoir le même nombre de champs
+- chaque ligne doit avoir le même nombre de champs
 - le type MIME ou *Content-Type* est `text/csv`
 
 ## Exemple
