@@ -1,7 +1,7 @@
 Format réglementaire pour la publication des données essentielles des conventions de subventions
 ===================================================================================================
 
-### Version 1.0.0
+### Version 1.1.0
 
 Ce dépôt est destiné à accueillir :
 
