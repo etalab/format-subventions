@@ -51,7 +51,7 @@ En effet, la structure décrite dans le décret se prête bien à la représenta
 - `montant`
     - si c'est un nombre décimal, ne pas oublier d'utiliser le point comme signe de séparation : `77800.20`
 - `nature`
-    - si le versement est à la fois en numéraire et en nature, séparez les valeurs par une virgule et mettez le champ entre parenthèses : `"aide en numéraire,aide en nature"`
+    - si le versement est à la fois en numéraire et en nature, séparez les valeurs par un point-virgule : `aide en numéraire;aide en nature` (l'arrêté sera amendé prochainement)
 - `conditionsVersement`
 - `datesPeriodeVersement`
     - si versement unique et date du versement connu, date unique : `2017-09-20`
