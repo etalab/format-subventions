@@ -90,3 +90,14 @@ Le fichier [exemple.csv](https://github.com/etalab/format-subventions/blob/maste
 ## Commentaires, suggestions
 
 Vous pouvez poser vos questions et transmettre vos commentaires via [le sujet dédié sur le forum d'Etalab](https://forum.etalab.gouv.fr/t/cadre-juridique-et-technique-de-louverture-des-donnees-de-subventions/4004).
+
+## Notes de versions
+
+### 1.1.0
+
+- Pour des raisons de praticité, et contrairement à la lettre de l'arrêté qui va être amendée, la mission Etalab a décidé d'utiliser le point comme séparateur des décimales
+- Pour les mêmes raisons, le séparateur du champ `nature` en cas de valeurs multiples est maintenant le point-virgule, et non plus la virgule
+
+### 1.0.0
+
+- Version initiale 26 février 2018
