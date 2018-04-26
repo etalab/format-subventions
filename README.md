@@ -1,7 +1,7 @@
 Format réglementaire pour la publication des données essentielles des conventions de subventions
 ===================================================================================================
 
-### Version 1.1.0
+### Version 1.1.1
 
 Ce dépôt est destiné à accueillir :
 
@@ -92,6 +92,10 @@ Le fichier [exemple.csv](https://github.com/etalab/format-subventions/blob/maste
 Vous pouvez poser vos questions et transmettre vos commentaires via [le sujet dédié sur le forum d'Etalab](https://forum.etalab.gouv.fr/t/cadre-juridique-et-technique-de-louverture-des-donnees-de-subventions/4004).
 
 ## Notes de versions
+
+### 1.1.1
+
+- Correction dans exemple.csv du format des pourcentageSubvention, du format `80` (%) au format `0.8`, comme décrit dans l'annexe de [l'arrêté](https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000036040528&dateTexte=&categorieLien=id) ([#3](https://github.com/etalab/format-subventions/issues/3))
 
 ### 1.1.0
 
