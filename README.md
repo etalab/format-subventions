@@ -55,7 +55,7 @@ En effet, la structure décrite dans le décret se prête bien à la représenta
 - `conditionsVersement`
 - `datesPeriodeVersement`
     - si versement unique et date du versement connu, date unique : `2017-09-20`
-    - si versement échelonné ou date précise de versement unique inonnue, indiquer une période : `2017-12-14_2018-12-14`
+    - si versement échelonné ou date précise de versement unique inconnue, indiquer une période : `2017-12-14_2018-12-14`
 - `idRAE`
 - `notificationUE`
 - `pourcentageSubvention`
